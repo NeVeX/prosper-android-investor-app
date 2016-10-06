@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<item name="prosper_color" type="color">#2fa8d8</item>-->
+    <item name="prosper_color" type="color">#2A97C2</item>
+    <item name="prosper_color_darker" type="color">#1888B5</item>
+    <item name="prosper_white" type="color">#ffffff</item>
+
+    <color name="prosper_red">#E65C5C</color>
+
+    <item name="prosper_rating_aa_bg" type="color">#19B3B3</item>
+    <item name="prosper_rating_a_bg" type="color">#4C9169</item>
+    <item name="prosper_rating_b_bg" type="color">#678FB8</item>
+    <item name="prosper_rating_c_bg" type="color">#876687</item>
+    <item name="prosper_rating_d_bg" type="color">#8663C2</item>
+    <item name="prosper_rating_e_bg" type="color">#9C8E46</item>
+    <item name="prosper_rating_hr_bg" type="color">#CC7670</item>
+
+    <!--<item name="toggle_button_on" type="color">#008A2E</item>-->
+    <!--<item name="toggle_button_off" type="color">#ffffff</item>-->
+
+    <!--<color name="prosper_invest_bg_color">#008A2E</color>-->
+    <!--<color name="prosper_account_cash_balance_color">#80CC99</color>-->
+    <!--<color name="prosper_account_balance_color">#80CC99</color>-->
+
+    <color name="prosper_grey">#6F6F6F</color>
+    <color name="prosper_black">#000000</color>
+    <!--<color name="prosper_text_changed">#FF6600</color>-->
+    <!--<color name="prosper_debug_background">#6F6F6F</color>-->
+    <color name="prosper_green">#23A883</color>
+    <color name="prosper_hint_color">#DFEAED</color>
+
+
+</resources>

@@ -1,0 +1,256 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:background="@color/prosper_color"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <LinearLayout
+        android:id="@+id/prosper_sign_in_account_debug_view"
+        android:paddingTop="10dp"
+        android:background="@color/prosper_grey"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+            android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Use Mock Data"
+                android:layout_weight="0.6"
+                android:singleLine="true"
+                android:textColor="@color/prosper_white"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <Switch
+                android:textOn="Yes"
+                android:textOff="No"
+                android:gravity="center"
+                android:minWidth="30dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/prosper_debug_mock_data_switch"
+                android:layout_height="wrap_content">
+            </Switch>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+            android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Environment"
+                android:layout_weight="0.6"
+                android:singleLine="true"
+                android:textColor="@color/prosper_white"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+            />
+            <Spinner
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minWidth="300dp"
+                android:id="@+id/prosper_debug_environment_spinner"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+            android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+            android:id="@+id/prosper_debug_users_select_view"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Test User"
+                android:layout_weight="0.6"
+                android:singleLine="true"
+                android:textColor="@color/prosper_white"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <Spinner
+                android:gravity="center"
+                android:minWidth="300dp"
+                android:id="@+id/prosper_debug_users_spinner"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+            android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+            android:paddingTop="@dimen/prosper_activity_vertical_margin"
+            android:paddingBottom="@dimen/prosper_activity_vertical_margin"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="8dp"
+                android:text="Enter Your Prosper API Credentials"
+                android:gravity="center"
+                android:textColor="@color/prosper_white"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/prosper_white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prosper_border_width"
+                android:layout_marginBottom="30dp"/>
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/prosper_sign_in_user_name_text"
+                android:hint="@string/prosper_sign_in_dot_net_user_name_hint"
+
+                android:singleLine="true"
+                android:textColor="@color/prosper_white"
+                android:textColorHint="@color/prosper_hint_color"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:id="@+id/prosper_sign_in_password_text"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/prosper_white"
+                android:hint="@string/prosper_sign_in_dot_net_password_hint"
+                android:textColorHint="@color/prosper_hint_color"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <EditText
+
+                android:layout_marginTop="30dp"
+                android:id="@+id/prosper_sign_in_client_key_text"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/prosper_white"
+                android:hint="@string/prosper_sign_in_java_client_key_hint"
+                android:textColorHint="@color/prosper_hint_color"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+
+                android:layout_marginTop="30dp"
+                android:id="@+id/prosper_sign_in_client_secret_text"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/prosper_white"
+                android:hint="@string/prosper_sign_in_java_client_secret_hint"
+                android:textColorHint="@color/prosper_hint_color"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+            android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+            android:paddingTop="@dimen/prosper_activity_vertical_margin"
+            android:paddingBottom="@dimen/prosper_activity_vertical_margin"
+            android:layout_marginBottom="15dp"
+            android:gravity="start"
+            android:textSize="@dimen/prosper_text_size_medium"
+            android:textColor="@color/prosper_white"
+            android:textColorLink="@color/prosper_white"
+            android:id="@+id/prosper_sign_in_info_text"
+            android:text="@string/prosper_login_api_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:padding="5dp"
+            android:background="@color/prosper_red"
+            android:gravity="center"
+            android:id="@+id/prosper_sign_in_status_text"
+            android:text=":-( Error"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/prosper_white"
+            android:textSize="@dimen/prosper_text_size_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--<View-->
+            <!--android:background="@color/prosper_white"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/prosper_border_width"/>-->
+        <Button
+            android:id="@+id/prosper_log_in_button"
+            android:text="@string/prosper_log_in"
+            android:onClick="onLoginButtonClicked"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prosper_button_height_bottom_anchor"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

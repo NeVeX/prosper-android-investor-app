@@ -1,0 +1,16 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/listing_entry_footer_view_enabled">
+    <TextView
+        android:textColor="@color/prosper_white"
+        android:background="@color/prosper_green"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/prosper_search_results_footer_retrieve_more_investments"
+        android:id="@+id/listing_entry_footer_enabled_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</RelativeLayout>

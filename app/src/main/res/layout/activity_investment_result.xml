@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+    android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+    android:paddingTop="@dimen/prosper_activity_vertical_margin"
+    android:paddingBottom="@dimen/prosper_activity_vertical_margin"
+    tools:context=".InvestmentResultActivity"
+    android:id="@+id/prosper_investment_result_view"
+    android:background="@color/prosper_green">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/prosper_investment_result_error_view"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView android:text="@string/prosper_sad_face"
+                    android:id="@+id/prosper_investment_result_face_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/prosper_white"
+                    android:textSize="@dimen/prosper_text_size_extra_large"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView android:text="@string/prosper_investment_order_result_unsuccessful_text"
+                    android:id="@+id/prosper_investment_result_message_did_it_succeed_text"
+                    android:textColor="@color/prosper_white"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/prosper_investment_result_summary_view"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:text="Investment Result Summary"
+                android:textStyle="bold"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:textColor="@color/prosper_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/one_sided_border_top">
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Listing Number"
+                        android:textColor="@color/prosper_white"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:text="12345"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:layout_width="0dp"
+                        android:id="@+id/prosper_investment_result_listing_number_text"
+                        android:textColor="@color/prosper_white"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Status"
+                        android:textColor="@color/prosper_white"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:text="SUCCESS"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:layout_width="0dp"
+                        android:id="@+id/prosper_investment_result_status_text"
+                        android:textColor="@color/prosper_white"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Message"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:textColor="@color/prosper_white"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="SUCCESS"
+                        android:gravity="end"
+                        android:id="@+id/prosper_investment_result_message_text"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:textColor="@color/prosper_white"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Amount Requested"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:textColor="@color/prosper_white"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="$100.00"
+                        android:gravity="end"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:id="@+id/prosper_investment_result_requested_amount_text"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:textColor="@color/prosper_white"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/prosper_investment_result_executed_amount_view"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Amount Executed"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:textColor="@color/prosper_white"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="$100.00"
+                        android:gravity="end"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:id="@+id/prosper_investment_result_executed_amount_text"
+                        android:textSize="@dimen/prosper_text_size_medium"
+                        android:textColor="@color/prosper_white"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

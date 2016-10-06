@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="prosper_activity_horizontal_margin">16dp</dimen>
+    <dimen name="prosper_activity_vertical_margin">16dp</dimen>
+    <dimen name="prosper_button_text_size">22sp</dimen>
+    <dimen name="prosper_edit_text_field_text_size">20sp</dimen>
+    <dimen name="prosper_status_text_size">15sp</dimen>
+    <dimen name="prosper_button_height">48dp</dimen>
+    <dimen name="prosper_rating_toggle_button_text_size">30sp</dimen>
+    <dimen name="prosper_rating_toggle_button_horiz_margin">8dp</dimen>
+
+    <dimen name="prosper_text_size_small">14sp</dimen>
+    <dimen name="prosper_text_size_medium">18sp</dimen>
+    <dimen name="prosper_text_size_large">24sp</dimen>
+    <dimen name="prosper_text_size_extra_large">40sp</dimen>
+
+    <dimen name="prosper_button_height_bottom_anchor">80dp</dimen>
+    <dimen name="prosper_button_height_top_anchor">48dp</dimen>
+    <dimen name="prosper_border_width">2dp</dimen>
+    <dimen name="prosper_button_corner_radius">5dp</dimen>
+    <dimen name="prosper_button_border_width">1dp</dimen>
+
+</resources>

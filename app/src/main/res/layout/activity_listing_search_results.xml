@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prosper_color"
+    tools:context="com.mark.prosper.invest.ListingSearchResultsActivity">
+
+
+    <LinearLayout
+            android:id="@+id/search_results_status"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <ProgressBar
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prosper_text_size_large"
+                android:progressDrawable="@color/prosper_white"
+                android:progressTint="@color/prosper_white"
+                />
+
+            <TextView
+                android:text="@string/prosper_search_listings_retrieving_text"
+                android:gravity="center"
+                android:textSize="@dimen/prosper_text_size_medium"
+                android:textColor="@color/prosper_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_results_error_view"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:text=":-("
+            android:gravity="center"
+            android:textSize="@dimen/prosper_text_size_extra_large"
+            android:textStyle="bold"
+            android:textColor="@color/prosper_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="@string/prosper_no_listings_found"
+            android:gravity="center"
+            android:textSize="@dimen/prosper_text_size_medium"
+            android:textColor="@color/prosper_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/search_results_view"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:text="@string/prosper_invest_in_selected_listings"
+            android:drawable="@drawable/prosper_button"
+            android:onClick="onInvestInMultipleListingsClicked"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prosper_button_height_bottom_anchor"
+            />
+
+        <ListView
+            android:divider="@color/prosper_white"
+            android:dividerHeight="@dimen/prosper_border_width"
+            android:id="@+id/search_results_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <!-- This will be populated using an inflator (using the listing_entry.xml) in the code -->
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

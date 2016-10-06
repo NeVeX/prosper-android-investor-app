@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+    android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+    android:paddingTop="@dimen/prosper_activity_vertical_margin"
+    android:paddingBottom="@dimen/prosper_activity_vertical_margin"
+    tools:context=".IntroActivity"
+    android:background="@color/prosper_color">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <TextView android:text="@string/prosper_invest_with"
+            android:layout_gravity="center"
+            android:textColor="@color/prosper_white"
+            android:textSize="30sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:text="@string/prosper"
+            android:layout_marginTop="-30dp"
+            android:textColor="@color/prosper_white"
+            android:textSize="80sp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+
+        <TextView android:text="BETA VERSION"
+            android:background="@color/prosper_red"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+
+            android:textColor="@color/prosper_white"
+            android:textSize="@dimen/prosper_text_size_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_marginBottom="25dp"
+                android:text="@string/prosper_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSignUpButtonClick" />
+
+            <Button
+                android:text="@string/prosper_sign_in"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:onClick="onSignInButtonClick"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

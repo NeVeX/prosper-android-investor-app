@@ -1,0 +1,19 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/listing_entry_footer_view_disabled">
+
+    <TextView
+        android:textColor="@color/prosper_white"
+        android:background="@color/prosper_grey"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/prosper_search_results_footer_end_of_search"
+        android:enabled="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"  />
+
+</LinearLayout>

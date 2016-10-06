@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/action_bar_refresh"
+        android:title="Refresh"
+        android:icon="@drawable/refresh"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_bar_logout"
+        android:title="Logout"
+        android:icon="@drawable/sign_out"
+        android:showAsAction="always" />
+
+</menu>

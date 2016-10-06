@@ -1,0 +1,233 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prosper_color"
+    tools:context="com.mark.prosper.invest.HomeActivity">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/account_retrieval_view"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prosper_text_size_large"
+            android:progressDrawable="@color/prosper_white"
+            android:progressTint="@color/prosper_white"
+
+            />
+
+        <TextView
+            android:text="@string/prosper_retrieving_account_information"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/prosper_white"
+            android:textSize="@dimen/prosper_text_size_medium"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prosper_account_overview_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+                android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+                android:paddingTop="@dimen/prosper_activity_vertical_margin"
+                android:paddingBottom="@dimen/prosper_activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/account_overview_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+
+                    />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView android:text="$34.00"
+                            android:textSize="@dimen/prosper_text_size_extra_large"
+                            android:id="@+id/prosper_selected_chart_value"
+                            android:gravity="center"
+                            android:textColor="@color/prosper_white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView android:text="CHART LABEL"
+                            android:id="@+id/prosper_selected_chart_value_label"
+                            android:gravity="center"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:textColor="@color/prosper_white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/one_sided_border_bottom">
+
+                        <TextView android:text="Other Balances"
+                            android:textStyle="bold"
+                            android:gravity="start|bottom"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:textColor="@color/prosper_white"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView android:text="Pending Quick Investments"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:gravity="start|bottom"
+                            android:textColor="@color/prosper_white"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView android:text="$34.00"
+                            android:gravity="end|bottom"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:textColor="@color/prosper_white"
+                            android:id="@+id/account_pending_quick_investments"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView android:text="Pending Folio Investments"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:gravity="start|bottom"
+                            android:textColor="@color/prosper_white"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.7"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView android:text="$34.00"
+                            android:gravity="end|bottom"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:textColor="@color/prosper_white"
+                            android:id="@+id/account_pending_folio_investments"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView android:text="Outstanding Principal on Notes"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:gravity="start|bottom"
+                            android:textColor="@color/prosper_white"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.6"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView android:text="$34.00"
+                            android:gravity="end|bottom"
+                            android:textSize="@dimen/prosper_text_size_medium"
+                            android:textColor="@color/prosper_white"
+                            android:id="@+id/account_outstanding_principal_on_notes"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/prosper_button_height_bottom_anchor"
+            android:layout_gravity="center"
+            android:onClick="onFindInvestmentsButtonClicked"
+            android:text="@string/prosper_search_for_listings"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,435 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/prosper_color"
+    tools:context="com.mark.prosper.invest.ListingSearchActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:paddingLeft="@dimen/prosper_activity_horizontal_margin"
+        android:paddingRight="@dimen/prosper_activity_horizontal_margin"
+        android:layout_weight="0.9"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Prosper Rating(s)"
+                    android:textColor="@color/prosper_white"
+                    android:gravity="start"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ToggleButton
+                        android:id="@+id/prosper_rating_aa"
+                        android:textOn="AA"
+                        android:textOff="AA"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/prosper_rating_a"
+                        android:textOn="A"
+                        android:textOff="A"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+                    <ToggleButton
+                        android:id="@+id/prosper_rating_b"
+                        android:textOn="B"
+                        android:textOff="B"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ToggleButton
+                        android:id="@+id/prosper_rating_c"
+                        android:textOn="C"
+                        android:textOff="C"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/prosper_rating_d"
+                        android:textOn="D"
+                        android:textOff="D"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+                    <ToggleButton
+                        android:id="@+id/prosper_rating_e"
+                        android:textOn="E"
+                        android:textOff="E"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+                    <ToggleButton
+                        android:id="@+id/prosper_rating_hr"
+                        android:textOn="HR"
+                        android:textOff="HR"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/prosper_color_darker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prosper_border_width"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Include Listings Already Invested In"
+                    android:textColor="@color/prosper_white"
+                    android:layout_weight="0.6"
+                    android:gravity="start"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--<View-->
+                    <!--android:layout_weight="0.1"-->
+                    <!--android:background="@color/prosper_white"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="@dimen/prosper_border_width"/>-->
+
+                <Switch
+                    android:thumb="@color/prosper_white"
+                    android:switchTextAppearance="@style/prosper_switch_text_appearance"
+                    android:id="@+id/prosper_search_listing_include_listings_invested_in_switch"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_weight="0.4"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="Yes"
+                    android:textOff="No"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/prosper_color_darker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prosper_border_width"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Minimum Estimated Return (%)"
+                    android:textColor="@color/prosper_white"
+                    android:gravity="start"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/prosper_button_height">
+
+                    <SeekBar
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".80"
+                        android:id="@+id/prosper_estimated_return_seekbar"
+                        android:max="25"
+                        android:progressBackgroundTint="@color/prosper_white"
+                        android:thumbTint="@color/prosper_white"
+                        android:progressTint="@color/prosper_white"
+                        android:progress="5"
+                        android:background="@color/prosper_color"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin">
+                    </SeekBar>
+                    <EditText
+                        android:gravity="top|center"
+                        android:text="5"
+                        android:textSize="@dimen/prosper_text_size_large"
+                        android:inputType="number"
+                        android:textColor="@color/prosper_white"
+                        android:textColorHint="@color/prosper_white"
+                        android:layout_weight=".15"
+                        android:id="@+id/prosper_estimated_return_seekbar_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/prosper_color_darker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prosper_border_width"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Minimum Amount Funded (%)"
+                    android:textColor="@color/prosper_white"
+                    android:gravity="start"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/prosper_button_height">
+
+                    <SeekBar
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".80"
+                        android:id="@+id/prosper_percent_funded_seekbar"
+                        android:max="100"
+                        android:progressBackgroundTint="@color/prosper_white"
+                        android:thumbTint="@color/prosper_white"
+                        android:progressTint="@color/prosper_white"
+                        android:progress="55"
+                        android:background="@color/prosper_color"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        >
+                    </SeekBar>
+                    <EditText
+                        android:gravity="top|center"
+                        android:text="65"
+                        android:textSize="@dimen/prosper_text_size_large"
+                        android:inputType="number"
+                        android:textColor="@color/prosper_white"
+                        android:textColorHint="@color/prosper_white"
+                        android:layout_weight=".15"
+                        android:id="@+id/prosper_percent_funded_seekbar_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/prosper_color_darker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prosper_border_width"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Maximum Borrower Debt/Income Ratio (%)"
+                    android:textColor="@color/prosper_white"
+                    android:gravity="start"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/prosper_button_height">
+
+                    <SeekBar
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".80"
+                        android:id="@+id/prosper_borrower_debt_to_income_seekbar"
+                        android:max="50"
+                        android:progressBackgroundTint="@color/prosper_white"
+                        android:thumbTint="@color/prosper_white"
+                        android:progressTint="@color/prosper_white"
+                        android:progress="30"
+
+                        android:background="@color/prosper_color"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        >
+                    </SeekBar>
+                    <EditText
+                        android:gravity="top|center"
+                        android:text="10"
+                        android:textSize="@dimen/prosper_text_size_large"
+                        android:inputType="number"
+                        android:textColor="@color/prosper_white"
+                        android:textColorHint="@color/prosper_white"
+                        android:layout_weight=".15"
+                        android:id="@+id/prosper_borrower_debt_to_income_seekbar_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/prosper_color_darker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/prosper_border_width"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Verification Stage(s)"
+                    android:textColor="@color/prosper_white"
+                    android:gravity="start"
+                    android:textSize="@dimen/prosper_text_size_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ToggleButton
+                        android:id="@+id/prosper_verification_stage_one"
+                        android:textOn="1"
+                        android:textOff="1"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/prosper_verification_stage_two"
+                        android:textOn="2"
+                        android:textOff="2"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/prosper_verification_stage_three"
+                        android:textOn="3"
+                        android:textOff="3"
+                        android:layout_marginEnd="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_marginRight="@dimen/prosper_rating_toggle_button_horiz_margin"
+                        android:layout_width="@dimen/prosper_button_height"
+                        android:layout_height="@dimen/prosper_button_height"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:text="@string/prosper_search"
+        android:drawable="@drawable/prosper_button"
+        android:onClick="onSearchListingsButtonClicked"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prosper_button_height_bottom_anchor"
+        />
+
+</LinearLayout>

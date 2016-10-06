@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Invest With Prosper</string>
+
+    <string name="prosper">Prosper</string>
+    <string name="prosper_invest_with">Invest With</string>
+    <string name="prosper_sign_in">SIGN IN</string>
+    <string name="prosper_sign_up">JOIN</string>
+    <string name="prosper_log_in">LOGIN</string>
+    <string name="prosper_retrieving_account_information">Retrieving your account information&#8230;</string>
+    <string name="prosper_retrieving_account_information_error">Could not get your account information. Try again later.</string>
+    <string name="prosper_search_results_status_retrieving">Retrieving listings&#8230;</string>
+    <string name="prosper_search_results_status_no_results">No listings matching your search were found</string>
+    <string name="prosper_search_results_footer_retrieve_more_investments">TAP TO RETRIEVE MORE LISTINGS</string>
+    <string name="prosper_search_results_footer_retrieving">RETRIEVING&#8230;</string>
+    <string name="prosper_search_results_footer_end_of_search">NO MORE LISTINGS</string>
+
+
+    <string name="prosper_sign_in_dot_net_user_name_hint">Prosper API Username</string>
+    <string name="prosper_sign_in_dot_net_password_hint">Prosper API Password</string>
+    <string name="prosper_sign_in_java_user_name_hint">Prosper Username</string>
+    <string name="prosper_sign_in_java_password_hint">Prosper Password</string>
+    <string name="prosper_sign_in_java_client_key_hint">Client Key</string>
+    <string name="prosper_sign_in_java_client_secret_hint">Client Secret</string>
+
+    <string name="prosper_sign_in_error_text">Could not log you in</string>
+    <string name="prosper_sign_in_logging_in_text">Logging in&#8230;</string>
+
+    <string name="prosper_sad_face">:-(</string>
+    <string name="prosper_happy_face">:-)</string>
+    <string name="prosper_investment_order_result_unsuccessful_text">Your Investment Order Was Not Successful</string>
+    <string name="prosper_investment_order_result_success_text">Your Investment Order Was Successful!</string>
+    <string name="prosper_investment_order_result_unknown_error_text">A problem was encountered when placing your order</string>
+    <string name="prosper_search_for_listings">SEARCH FOR LISTINGS</string>
+    <string name="prosper_invest">INVEST</string>
+    <string name="prosper_search">SEARCH</string>
+    <string name="prosper_no_listings_found">No listings were found for your search</string>
+    <string name="prosper_listing_search_results">Listings Found</string>
+    <string name="prosper_cancel">CANCEL</string>
+    <string name="prosper_invest_in_selected_listings">BULK INVEST IN LISTINGS BELOW</string>
+    <string name="prosper_invest_in_multiple_listings">Invest in multiple listings</string>
+    <string name="prosper_invest_listing_amount_text">Amount to invest</string>
+    <string name="prosper_invest_listing_multiple_amount_text">Amount to invest per listing</string>
+    <string name="prosper_error_listing_amount_less_than_25">Investment amount must be greater than $25!</string>
+    <string name="prosper_error_listing_amount_too_much">This is too much of an investment!</string>
+    <string name="prosper_error_not_enough_funds_in_account">You don\'t have enough funds</string>
+    <string name="prosper_login_api_info">You must use your Prosper API username and password. To find out what your username and password is, visit your <a href="https://www.prosper.com/secure/account/common/settings.aspx">Prosper Settings Page</a> and click on Edit API. Also if you wish to invest using this app, disable Write Only access.</string>
+    <string name="prosper_search_listings_retrieving_text">Retrieving listings&#8230;</string>
+
+</resources>
